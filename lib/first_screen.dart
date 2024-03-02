@@ -29,13 +29,16 @@ class Firstscreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              const Icon(
-                Icons.account_circle_rounded,
-                size: 122,
-                color: Colors.blue,
-              ),
-              Text(
+
+children:[
+const CircleAvatar(
+radius: 100,
+backgroundColor: Colors. blueGrey,
+backgroundImage: AssetImage('assets/ogo.jpeg')
+
+),
+
+              Text (
                 'Mariam Maher Abdullah',
                 style: TextStyle(
                   color: Color.fromARGB(255, 133, 50, 181),
@@ -54,77 +57,128 @@ class Firstscreen extends StatelessWidget {
                   fontWeight: FontWeight.normal,
                 ),
               ),
-              Text(
-                '@Mariam Maher Abdullah',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Text(
-                '@Mariam Maher Abdullah',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Text(
-                '@Mariam Maher Abdullah',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Text(
-                '@Mariam Maher Abdullah',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
+
+
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  IconButton(
+                   IconButton(
                     onPressed: () {},
                     icon: const Icon(Icons.facebook_rounded),
                     color: Colors.blue,
                   ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.camera_enhance_rounded),
-                    color: Colors.deepPurple,
+                  Text(
+                    '@Mariam Maher Abdullah',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
-                  IconButton(
+                   IconButton(
                     onPressed: () {},
-                    icon: const Icon(Icons.snapchat_sharp),
-                    color: Colors.amber,
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.telegram),
+                    icon:  Icon(Icons.arrow_forward_ios_outlined),
                     color: Colors.blue,
                   ),
                 ],
-              )
-            ],
-          ),
-        ));
+              ),
+              SizedBox(
+                height: 20,
+              ),
+
+
+
+
+ Row(
+                children: [
+                   IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.camera_alt),
+                    color: Colors.blue,
+                  ),
+                  Text(
+                    '@Mariam Maher Abdullah',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                   IconButton(
+                    onPressed: () {},
+                    icon:  Icon(Icons.arrow_forward_ios_outlined),
+                    color: Colors.red,
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
+
+
+
+
+
+       Row(
+                children: [
+                   IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.music_note_outlined),
+                    color: Colors.blue,
+                  ),
+                  Text(
+                    '@Mariam Maher Abdullah',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                   IconButton(
+                    onPressed: () {},
+                    icon:  Icon(Icons.arrow_forward_ios_outlined),
+                    color: Colors.blue,
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),       
+
+
+
+
+               Row(
+                children: [
+                   IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.snapchat),
+                    color: Colors.blue,
+                  ),
+                  Text(
+                    '@Mariam Maher Abdullah',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                   IconButton(
+                    onPressed: () {},
+                    icon:  Icon(Icons.arrow_forward_ios_outlined),
+                    color: Colors.amber,
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
+
+
+            ]
+
+          )
+        )  
+        );
+        
   }
 }
